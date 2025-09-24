@@ -1,0 +1,18 @@
+from langchain_tavily import TavilySearch
+from langchain_core.tools import tool
+from dotenv import load_dotenv
+load_dotenv()
+@tool
+def web_search(query:str) -> dict:
+    """Use this tool to search the web for recent information and retrieve relevant content."""
+    search = TavilySearch(max_results=1,include_raw_content=True,include_images=True,search_depth="advanced",topic="general")
+    result = search.invoke({"query": query})
+    texts = [r['content'] for r in result['results']]
+    image_urls = result.get('images', [])
+    return ({
+        "content":"\n".join(texts),
+        "images":image_urls
+    })
+if __name__ == "__main__":
+    query = "Latest advancements in AI technology"
+    print(web_search(query))
