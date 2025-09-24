@@ -42,8 +42,8 @@ Transform any topic into engaging LinkedIn content with the power of AI. Insight
 4. **Configure environment variables**
    Create a `.env` file in the root directory:
    ```env
-   GOOGLE_API_KEY=your_gemini_api_key_here
-   TAVILY_API_KEY = ""
+   GOOGLE_API_KEY="add here"
+   TAVILY_API_KEY = "add here"
    ```
 
 5. **Start the development server**
