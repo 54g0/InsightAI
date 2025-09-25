@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/server.py": {
+    "app/server.py": {
       "runtime": "python3.11",
       "handler": "server.handler"
     }
