@@ -12,4 +12,4 @@ def generate_post(request: TopicRequest):
     topic = request.topic
     result = generate_lp_json_output(topic)
     return result
-handler = Mangum(app)
+handler = app
