@@ -109,4 +109,4 @@ curl -X POST "https://insight-ai-virid.vercel.app/generate_post" -H "Content-Typ
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
