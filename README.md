@@ -53,7 +53,9 @@ Transform any topic into engaging LinkedIn content with the power of AI. Insight
 
 6. **Test your installation**
    ```bash
-    curl -X POST "https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/generate_post" -H "Content-Type: application/json" -d '{"topic": "Artificial Intelligence"}'
+    curl -X POST "http://127.0.0.1:8000/generate_post" \
+      -H "Content-Type: application/json" \
+      -d '{"topic": "Artificial Intelligence"}'
    ```
 
 ## API Documentation
@@ -66,11 +68,11 @@ Once your server is running, explore the interactive API documentation:
 ## Live API
 
 Use our deployed version for instant access:
+- **Swagger UI**: https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/docs
+- **ReDoc**: https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/redoc
 
 ```bash
-curl -X POST "https://your-vercel-app.vercel.app/generate_post" \
-  -H "Content-Type: application/json" \
-  -d '{"topic": "Artificial Intelligence"}'
+curl -X POST "https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/generate_post" -H "Content-Type: application/json" -d '{"topic": "Artificial Intelligence"}'
 ```
 
 ##  API Usage
