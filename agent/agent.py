@@ -13,7 +13,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 class PostlyAgent:
     def __init__(self):
-        self.llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", api_key=GEMINI_API_KEY)
+        self.llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
         self.tools = [web_search]
     def create_agent(self):
         agent = create_react_agent(
