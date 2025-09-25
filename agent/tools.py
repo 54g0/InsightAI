@@ -3,7 +3,7 @@ from langchain_core.tools import tool
 import os
 from dotenv import load_dotenv
 load_dotenv()
-TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY")
+
 @tool
 def web_search(query:str) -> dict:
     """Use this tool to search the web for recent information and retrieve relevant content."""

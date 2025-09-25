@@ -9,7 +9,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from prompts.system import system_prompt
 from dotenv import load_dotenv
 load_dotenv()
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 class PostlyAgent:
     def __init__(self):
