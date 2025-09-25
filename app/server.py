@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from agent.agent import generate_lp_json_output
-from mangum import Mangum
 
 app = FastAPI()
 class TopicRequest(BaseModel):
@@ -12,4 +11,3 @@ def generate_post(request: TopicRequest):
     topic = request.topic
     result = generate_lp_json_output(topic)
     return result
-handler = app
