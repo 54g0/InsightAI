@@ -1,15 +1,8 @@
 {
   "functions": {
-    "app/server.py": {
+    "api/server.py": {
       "runtime": "python3.11",
       "handler": "server.handler"
     }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app/server.py",
-      "methods": ["GET", "POST", "OPTIONS"]
-    }
-  ]
+  }
 }
