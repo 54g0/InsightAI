@@ -68,11 +68,11 @@ Once your server is running, explore the interactive API documentation:
 ## Live API
 
 Use our deployed version for instant access:
-- **Swagger UI**: https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/docs
-- **ReDoc**: https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/redoc
+- **Swagger UI**: https://insight-ai-virid.vercel.app/docs
+- **ReDoc**: https://insight-ai-virid.vercel.app/redoc
 
 ```bash
-curl -X POST "https://insight-xux1f1w4p-sagars-projects-b6ff6cf6.vercel.app/generate_post" -H "Content-Type: application/json" -d '{"topic": "Artificial Intelligence"}'
+curl -X POST "https://insight-ai-virid.vercel.app/generate_post" -H "Content-Type: application/json" -d '{"topic": "Artificial Intelligence"}'
 ```
 
 ##  API Usage
